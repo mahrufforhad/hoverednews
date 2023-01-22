@@ -71,10 +71,11 @@
 }
 .news_page .header .actions a{
   height: 40px;
-  padding: 0 20px;
+  width: 60px;
   border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
   font-size: 16px;
   font-family: var(--fontFamily1);
@@ -121,7 +122,7 @@
 @media (max-width: 650px){
   .news_page .content{
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
   }
 }
 
@@ -135,6 +136,9 @@
 }
 .news_page .news_content h1,h2,h3,h4,h5,h6{
   font-family: var(--fontFamily2);
+}
+.news_page .news_content h2{
+  margin-top: -7px;
 }
 .news_page .news_content p{
   font-size: 18px;

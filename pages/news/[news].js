@@ -144,18 +144,24 @@ export default function News({ user, uid, newsData, setShowPageTransition, setSh
               </div>
 
               <div className="actions">
-                <a className="circle icon select_n"><i className="fa-brands fa-facebook" /></a>
-                <a onClick={share} className="select_n"><i className="fa-solid fa-share" /> <span>Share</span></a>
-                <a onClick={copyURL} className="select_n"><i className="fa-regular fa-copy" /> <span>Copy Link</span></a>
+                <a onClick={share} className="select_n"><i className="fa-solid fa-share" /></a>
+                <a onClick={copyURL} className="select_n"><i className="fa-regular fa-copy" /></a>
               </div>
             </div>
     
             <div className="content">
               <div className="news_content">
-                <div className={imageLoaded? "image_container" : "image_container blur"}>
-                  <Image src={data.thumbnail} onLoadingComplete={() => {setTimeout(() => {setImageLoaded(true)}, 500)}} layout="fill" className="image" alt="News Banner" />
-                </div>
-                <br />
+                {
+                  data.showThumbnail === false?
+                  ''
+                  :
+                  <>
+                    <div className={imageLoaded? "image_container" : "image_container blur"}>
+                      <Image src={data.thumbnail} onLoadingComplete={() => {setTimeout(() => {setImageLoaded(true)}, 500)}} layout="fill" className="image" alt="News Banner" />
+                    </div>
+                    <br />
+                  </>
+                }
                 <div dangerouslySetInnerHTML={{__html: data.content}} />
               </div>
     
