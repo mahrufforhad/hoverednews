@@ -1,0 +1,30 @@
+.about_page .header{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  background-position-x: right;
+  background-size: cover;
+  padding: 0 50px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%,
+  rgba(255, 255, 255, 0)), url('../assets/images/page\ banners/about.png');
+}
+.about_page .header h1{
+  font-size: 30px;
+  font-family: var(--fontFamily1);
+  font-weight: 800;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+.about_page .about_text{
+  padding: 40px 0 0;
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  font-weight: 400;
+  color: var(--color1);
+  line-height: 1.5;
+}

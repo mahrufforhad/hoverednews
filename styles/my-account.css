@@ -1,0 +1,231 @@
+.my_account_page .wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--bgColor1);
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px var(--bgColor2);
+}
+
+
+.my_account_page .side_content{
+  width: 300px;
+}
+@media (max-width: 1090px) {
+  .my_account_page .side_content{
+    width: 100%;
+  }
+}
+.my_account_page .side_content .profile_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.my_account_page .side_content .profile_image .edit_btn{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  backdrop-filter: blur(50px);
+  background: none;
+}
+.my_account_page .side_content .profile_image .loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  background: none;
+}
+.my_account_page .side_content .profile_image .loading.show{
+  display: flex;
+}
+.my_account_page .side_content .profile_image .loading span{
+  font-size: 25px;
+}
+.my_account_page .side_content .profile_info{
+  margin-top: 15px;
+}
+.my_account_page .side_content .profile_info .name{
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  font-weight: 600;
+  color: var(--txtColor2);
+  text-align: center;
+  display: block;
+}
+.my_account_page .side_content .profile_info .email{
+  font-size: 14px;
+  font-family: var(--fontFamily1);
+  margin-top: 5px;
+  font-weight: 600;
+  color: var(--txtColor3);
+  text-align: center;
+  display: block;
+}
+.my_account_page .side_content .title{
+  font-size: 16px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  width: 100%;
+  color: var(--txtColor2);
+}
+.my_account_page .side_content .links{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.my_account_page .side_content .links li{
+  list-style: none;
+}
+.my_account_page .side_content .links li a{
+  font-size: 16px;
+  font-family: var(--fontFamily1);
+  font-weight: 500;
+  padding: 8px 13px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: var(--txtColor3);
+  text-decoration: none;
+  cursor: pointer;
+}
+.my_account_page .side_content .links li a:hover{
+  background: var(--bgColor2);
+}
+.my_account_page .side_content .links li.active a{
+  color: var(--brandingColor);
+  background: var(--bgColor2);
+}
+
+
+.my_account_page .main_content{
+  width: calc(100% - 325px);
+  margin-left: 25px;
+  border-left: 2px solid var(--bgColor2);
+  padding: 0 0 0 25px;
+}
+@media (max-width: 1090px) {
+  .my_account_page .main_content{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    border: none;
+    border-top: 2px solid var(--bgColor2);
+    padding-top: 15px;
+  }
+}
+.my_account_page .main_content section{
+
+}
+.my_account_page .main_content section .section_title{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: var(--txtColor2);
+}
+.my_account_page .main_content section .section_title span{
+  color: var(--txtColor3);
+  margin-right: 10px;
+  font-size: 25px;
+}
+
+.my_account_page section.dashboard{
+
+}
+.my_account_page section.dashboard p{
+  font-size: 16px;
+  font-family: var(--fontFamily1);
+  font-weight: 450;
+  color: var(--txtColor3);
+}
+.my_account_page section.dashboard p .bold{
+  font-weight: 700;
+}
+.my_account_page section.dashboard p a{
+  text-decoration: none;
+  color: var(--brandingColor);
+}
+.my_account_page section.dashboard .dashboard_links{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+@media (max-width: 600px) {
+  .my_account_page section.dashboard .dashboard_links{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 400px) {
+  .my_account_page section.dashboard .dashboard_links{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.my_account_page section.dashboard .dashboard_links .card{
+  text-decoration: none;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: .3s;
+  border: 1px solid var(--brdColor1);
+}
+.my_account_page section.dashboard .dashboard_links .card:hover{
+  border-color: black;
+}
+.my_account_page section.dashboard .dashboard_links .card:active{
+  border-color: var(--brandingColor);
+}
+.my_account_page section.dashboard .dashboard_links .card .icon{
+  margin: 0 auto;
+  color: var(--txtColor3);
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+.my_account_page section.dashboard .dashboard_links .card:hover .icon{
+  color: var(--txtColor1);
+}
+.my_account_page section.dashboard .dashboard_links .card:active .icon{
+  color: var(--brandingColor);
+}
+.my_account_page section.dashboard .dashboard_links .card .icon img{
+  width: 70px;
+}
+.my_account_page section.dashboard .dashboard_links .card .title{
+  font-size: 16px;
+  font-family: var(--fontFamily1);
+  margin-top: 10px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--txtColor3);
+}
+.my_account_page section.dashboard .dashboard_links .card:hover .title{
+  color: var(--txtColor1);
+}
+.my_account_page section.dashboard .dashboard_links .card:active .title{
+  color: var(--brandingColor);
+}

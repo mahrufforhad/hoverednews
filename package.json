@@ -1,0 +1,30 @@
+{
+  "name": "hovered-news",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/material": "^5.6.2",
+    "browser-image-compression": "^2.0.0",
+    "firebase": "^9.6.11",
+    "jquery": "^3.6.0",
+    "next": "12.1.4",
+    "next-pwa": "^5.5.4",
+    "next-sitemap": "^2.5.20",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-owl-carousel": "^2.3.3",
+    "webpack": "^5.72.0"
+  },
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.4"
+  }
+}

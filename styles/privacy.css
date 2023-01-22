@@ -1,0 +1,53 @@
+.privacy_page .header{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  background-position-x: right;
+  background-size: cover;
+  padding: 0 50px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%,
+  rgba(255, 255, 255, 0)), url('../assets/images/page\ banners/about.png');
+}
+.privacy_page .header h1{
+  font-size: 30px;
+  font-family: var(--fontFamily1);
+  font-weight: 800;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+.privacy_page .privacy_text{
+  padding: 40px 0 0;
+  font-size: 20px;
+  font-family: var(--fontFamily1);
+  font-weight: 400;
+  color: var(--txtColor1);
+  line-height: 33px;
+  max-width: 800px;
+}
+.privacy_page .privacy_text a{
+  word-break: break-all;
+  font-weight: 600;
+  color: var(--txtColor1);
+}
+
+.privacy_page .privacy_text h2{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  color: var(--color1);
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.privacy_page .privacy_text ul{
+  padding-left: 40px;
+  margin-top: 20px;
+}
+.privacy_page .privacy_text ul li{
+  color: var(--txtColor1);
+}

@@ -1,0 +1,7 @@
+.comments .section_title{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--txtColor1);
+  text-decoration: none;
+  font-family: var(--fontFamily1);
+}

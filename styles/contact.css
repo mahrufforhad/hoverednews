@@ -1,0 +1,182 @@
+.contact_page .header{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  background-position-x: right;
+  background-size: cover;
+  padding: 0 50px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%,
+  rgba(255, 255, 255, 0)), url('../assets/images/page\ banners/about.png');
+}
+.contact_page .header h1{
+  font-size: 30px;
+  font-family: var(--fontFamily1);
+  font-weight: 800;
+  color: white;
+  margin-top: -5px;
+  margin-bottom: 0;
+}
+
+.contact_page .map{
+  border-radius: 10px;
+  border: 4px solid var(--brdColor1);
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+}
+.contact_page .map iframe{
+  width: 100% !important;
+  height: 300px;
+}
+
+.contact_page .section{
+  margin-top: 60px;
+}
+@media (max-width: 700px) {
+  .contact_page .section{
+    margin-top: 30px;
+  }
+}
+.contact_page .section_header h2{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  color: var(--txtColor1);
+  font-weight: 700;
+}
+@media (max-width: 500px) {
+  .contact_page .section_header h2{
+    font-size: 20px;
+  }
+}
+.contact_page .section_description{
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  color: var(--txtColor3);
+  font-weight: 500;
+  margin-top: 10px;
+  line-height: 26px;
+}
+.contact_page .section .content{
+  margin-top: 20px;
+}
+
+.contact_page .section.contact_info{
+  background: var(--bgColor1);
+  padding: 40px;
+  border-radius: 10px;
+}
+.contact_page .section.contact_info .content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 0;
+}
+@media (max-width: 900px) {
+  .contact_page .section.contact_info .content{
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .contact_page .section.contact_info .content{
+    grid-template-columns: 1fr;
+  }
+}
+.contact_page .section.contact_info .content .item{
+  text-align: center;
+}
+.contact_page .section.contact_info .content .item span.fas{
+  font-size: 40px;
+  color: var(--brandingColor);
+}
+.contact_page .section.contact_info .content .item .name{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  color: var(--txtColor1);
+  font-weight: 700;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .contact_page .section.contact_info .content .item .name{
+    font-size: 18px;
+  }
+}
+.contact_page .section.contact_info .content .item span:not(.fas){
+  font-size: 14px;
+  font-family: var(--fontFamily1);
+  color: var(--txtColor3);
+  font-weight: 500;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+
+.contact_page .wrapper{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+}
+@media (max-width: 900px) {
+  .contact_page .wrapper{
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}
+
+.contact_page .section.faqs{
+  
+}
+.contact_page .section.faqs .content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact_page .section.faqs .item{
+  
+}
+.contact_page .section.faqs .item .toggle_btn{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-radius: 5px;
+  font-size: 17px;
+  line-height: 26px;
+  background: var(--bgColor1);
+  font-family: var(--fontFamily1);
+  font-weight: 500;
+  color: var(--txtColor1);
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+}
+.contact_page .section.faqs .item .toggle_btn span{
+  font-size: 15px;
+  transition: .3s;
+  margin-top: 3px;
+  margin-left: 10px;
+}
+.contact_page .section.faqs .item .toggle_btn.show span{
+  transform: rotate(180deg);
+}
+.contact_page .section.faqs .item .toggle_content{
+  height:0;
+  overflow: hidden;
+  transition: .2s;
+  background: var(--bgColor3);
+  padding: 0 15px;
+  border-radius: 5px;
+}
+.contact_page .section.faqs .item .toggle_btn.show + .toggle_content{
+  height: min-content;
+  padding: 15px;
+}
+.contact_page .section.faqs .item .toggle_content p{
+  font-size: 17px;
+  font-family: var(--fontFamily1);
+  color: var(--txtColor2);
+  font-weight: 450;
+  line-height: 28px;
+}

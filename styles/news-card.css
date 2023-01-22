@@ -1,0 +1,129 @@
+.news_card{
+  display: flex;
+  border-radius: 8px !important;
+  background: var(--bgColor1);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--bgColor2);
+  position: relative;
+  justify-content: space-between;
+  height: min-content;
+}
+@media (max-width: 530px){
+  .news_card{
+    flex-direction: column;
+  }
+}
+.news_card_2{
+  display: unset !important;
+}
+.news_card .card-title{
+  position: absolute;
+  border-radius: 0 0 8px 0;
+  left: 0;
+  border-bottom: 2px solid var(--brandingColor2);
+  border-right: 2px solid var(--brandingColor2);
+  top: 0;
+  background: var(--bgColor1);
+  padding: 0 10px;
+  height: 30px;
+  display: flex;
+  color: var(--brandingColor2);
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  text-decoration: none;
+  font-weight: 450;
+  border-radius: 8px;
+  font-style: italic;
+}
+.news_card .card-title:hover{
+  color: var(--brandingColor1);
+  text-shadow: .2px .2px  var(--brandingColor2);
+  text-decoration: underline;
+}
+.news_card .card-title svg{
+  height: 20px;
+  margin-right: 10px;
+}
+.news_card .thumbnail{
+  width: 280px;
+  aspect-ratio: 1.40967741935;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid var(--bgColor3);
+}
+.news_card .thumbnail img{
+  filter: blur(0px) !important;
+  transition: .4s;
+}
+.news_card .thumbnail.blur img{
+  filter: blur(50px) !important;
+}
+.news_card_2 .thumbnail{
+  width: 100%;
+  aspect-ratio: 1.40967741935;
+}
+@media (max-width: 530px){
+  .news_card .thumbnail{
+    width: 100%;
+  }
+}
+.news_card .infos{
+  width: calc(100% - 280px);
+  position: relative;
+  padding-left: 20px;
+}
+@media (max-width: 530px){
+  .news_card .infos{
+    width: 100%;
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+.news_card_2 .infos{
+  padding: 0;
+  width: 100%;
+  margin-top: 8px;
+}
+.news_card .infos .title{
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--brandingColor1);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 25px;
+  text-overflow: ellipsis;
+}
+.news_card .infos .title:hover{
+  text-decoration: underline;
+}
+.news_card .infos .title:active{
+  text-decoration: none;
+}
+.news_card .infos p{
+  font-size: 17px;
+  font-family: var(--fontFamily1);
+  font-weight: 400;
+  color: var(--txtColor2);
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 28px;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.news_card .actions{
+  margin-top: 10px;
+}

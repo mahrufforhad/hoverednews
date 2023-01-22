@@ -1,0 +1,351 @@
+.home_page header{
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 480px auto;
+}
+.home_page header .header_left{
+  border-radius: 20px;
+  background: var(--bgColor1);
+  box-shadow: 0px 0 20px var(--bgColor2);
+  display: grid;
+  padding: 10px;
+}
+.home_page header .weather{
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: inset 0 0 10px var(--bgColor2);
+  background: var(--bgColor1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.home_page header .greetings{
+  display: flex;
+  padding: 10px;
+  background: var(--bgColor2);
+  align-items: center;
+  border-radius: 20px;
+  gap: 15px;
+}
+.home_page header .greetings .graphics{
+  display: flex;
+  align-items: center;
+}
+.home_page header .greetings .graphics svg{
+  width: 70px;
+}
+.home_page header .greetings .greeting-text{
+  font-family: var(--fontFamily1);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--txtColor2);
+}
+.home_page header .greetings .greeting-text span{
+  color: var(--txtColor1);
+}
+
+.home_page header .weather_cast{
+  display: flex;
+  align-items: center;
+}
+.home_page header .weather_cast .info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.home_page header .weather_cast .info .left{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.home_page header .weather_cast .graphics{
+  width: 60px;
+}
+.home_page header .weather_cast .graphics svg{
+  width: 60px;
+}
+.home_page header .weather_cast .text{
+  font-size: 20px;
+  font-family: var(--fontFamily1);
+  font-weight: 750;
+}
+.home_page header .weather_cast .location{
+  font-size: 18px;
+  font-family: var(--fontFamily1);
+  font-weight: 550;
+}
+
+.home_page header .weather_cast .temperature{
+  font-size: 30px;
+  font-family: var(--fontFamily1);
+  font-weight: 600;
+  color: var(--txtColor2);
+}
+.home_page header .weather_cast .temperature span{
+  font-size: 50px;
+}
+
+/***** Header Right *****/
+.home_page header .header_right{
+  border-radius: 20px;
+  background: var(--bgColor1);
+  box-shadow: 0px 0 20px var(--bgColor2);
+  overflow: hidden;
+}
+.home_page header .header_right .news_card{
+ box-shadow: none;
+ padding: 15px; 
+}
+.home_page header .header_right .news_card p{
+  -webkit-line-clamp: 5;
+}
+
+@media only screen and (max-width: 1110px){
+  .home_page header{
+    grid-template-columns: 400px auto;
+  }
+  .home_page header .weather{
+    padding: 10px;
+  }
+  .home_page header .weather_cast .info{
+    gap: 10px;
+  }
+  .home_page header .greetings .graphics{
+    height: 75px;
+  }
+  .home_page header .greetings .graphics svg{
+    height: 75px;
+  }
+  .home_page header .greetings .greeting-text{
+    font-size: 22px;
+  }
+  .home_page header .weather_cast .graphics{
+    height: 55px;
+  }
+  .home_page header .weather_cast .graphics svg{
+    height: 55px;
+  }
+  .home_page header .weather_cast .text{
+    font-size: 19px;
+  }
+  .home_page header .weather_cast .location{
+    font-size: 17px;
+  }
+  .home_page header .header_right .hottest-news .thumbnail{
+    height: 210px;
+    width: 250px;
+  }
+  .home_page header .header_right .hottest-news .thumbnail img{
+    height: 210px;
+    width: unset !important;
+  }
+  .home_page header .header_right .hottest-news .infos{
+    width: calc(100% - 250px);
+    padding-left: 15px;
+  }
+  .home_page header .header_right .hottest-news .infos .title{
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 890px){
+  .home_page header{
+    display: flex;
+    grid-template-columns: unset !important;
+    flex-wrap: wrap;
+  }
+  .home_page header .header_left,
+  .home_page header .header_right{
+    width: 100%;
+  }
+  .home_page header .header_left{
+    height: 210px;
+  }
+}
+@media only screen and (max-width: 520px){
+  .home_page header .header_left{
+    height: 210px;
+  }
+  .home_page header .weather_cast .text{
+    font-size: 18px;
+  }
+  .home_page header .weather_cast .location{
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 460px){
+  .home_page header .header_left{
+    height: unset !important;
+  }
+  .home_page header .header_left .weather_cast{
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+  .home_page header .weather_cast .info .left{
+    gap: 0;
+  }
+  .home_page header .weather_cast .graphics svg{
+    width: 50px;
+  }
+  .home_page header .weather_cast .temperature span{
+    font-size: 35px;
+  }
+  .home_page header .header_right .hottest-news .thumbnail{
+    width: 100%;
+  }
+  .home_page header .header_right .hottest-news .thumbnail img{
+    width: 100% !important;
+  }
+  .home_page header .header_right .hottest-news{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .home_page header .header_right .hottest-news .infos{
+    width: 100%;
+    padding-left: 0;
+  }
+  .home_page header .header_right .hottest-news .infos .read_more_btn{
+    position: unset !important;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 310px){
+  .home_page header .weather_cast{
+    padding-top: 10px;
+    position: relative;
+  }
+  .home_page header .weather_cast .graphics{
+    height: 60px;
+  }
+  .home_page header .weather_cast .info{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .home_page header .weather_cast .info .left{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .home_page header .weather_cast .info .left .details{
+    padding-left: 10px;
+  }
+  .home_page header .weather_cast .temperature{
+    padding-right: 10px;
+  }
+  .home_page header .weather_cast .temperature span{
+    font-size: 40px;
+  }
+  
+  .home_page header .header_right .hottest-news .thumbnail{
+    width: 100%;
+    height: 200px;
+  }
+  .home_page header .header_right .hottest-news .infos .title{
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 345px){
+  .home_page header .header_left{
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 330px){
+  .home_page header .greetings .graphics{
+    height: 65px;
+  }
+  .home_page header .greetings .graphics svg{
+    height: 65px;
+  }
+  .home_page header .greetings .greeting-text{
+    font-size: 20px;
+  }
+}
+
+/* Section Default CSS */
+.home_page section{
+  margin-top: 30px;
+}
+.home_page section .section_header h2{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  color: var(--txtColor2);
+  line-height: 40px;
+  text-transform: uppercase;
+  border-bottom: 5px solid var(--bgColor1);
+}
+
+.home_page section .section_content:not(.m_n){
+  margin-top: 20px;
+}
+/* Section Default CSS End */
+
+/* Grid News Sections CSS End */
+.home_page section.grid_news_section .news_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  grid-gap: 20px;
+}
+.home_page section.grid_news_section .news_card{
+  box-shadow: 0 0 5px var(--bxShadow2);
+  border-radius: 15px !important;
+}
+
+@media only screen and (max-width: 600px){
+  .home_page section.category_news .cards_container{
+    grid-gap: 10px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .home_page section.category_news .cards_container{
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* Grid News Sections CSS End */
+
+/* News Categories Section CSS */
+.home_page section.news_categories .section_content{
+  padding: 50px 0;
+}
+.home_page section.news_categories .section_content .categories_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+.home_page section.news_categories .section_content .categories_container .card{
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 150px;
+  cursor: pointer;
+  background-position: -500px;
+}
+.home_page section.news_categories .section_content .categories_container .card.education{
+  background-image: url('../assets/images/topic\ banners/education.png');
+}
+.home_page section.news_categories .section_content .categories_container .card.international{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%,
+  rgba(255, 255, 255, 0)), url('../assets/images/topic\ banners/international.png');
+}
+.home_page section.news_categories .section_content .categories_container .card.bangladesh{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 10%,
+  rgba(255, 255, 255, 0)), url('../assets/images/topic\ banners/bangladesh.png');
+}
+.home_page section.news_categories .section_content .categories_container .card.business{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%,
+  rgba(255, 255, 255, 0)), url('../assets/images/topic\ banners/business.png');
+}
+.home_page section.news_categories .section_content .categories_container .card h2{
+  font-size: 22px;
+  font-family: var(--fontFamily1);
+  font-weight: 700;
+  color: white;
+}
+/* News Categories Section CSS End */

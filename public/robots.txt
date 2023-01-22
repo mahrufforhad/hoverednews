@@ -1,0 +1,4 @@
+User-agent: *
+Allos: /
+
+Sitemap: http://www.hoverednews.vercel.app/sitemap.xml

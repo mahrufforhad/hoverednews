@@ -1,0 +1,82 @@
+.comment_card{
+  display: flex;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.comment_card .image{
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 650px){
+  .comment_card .image{
+    height: 30px;
+    width: 30px;
+  }
+}
+.comment_card .image img{
+  width: 100%;
+}
+
+.comment_card .details{
+  width: calc(100% - 50px);
+  margin-left: 10px;
+  margin-top: 0 !important;
+}
+@media screen and (max-width: 650px){
+  .comment_card .details{
+    width: calc(100% - 40px);
+    margin-left: 10px;
+  }
+}
+.comment_card .details .top{
+  display: flex;
+  gap: 5px;
+  margin-top: -3px;
+}
+@media screen and (max-width: 520px){
+  .comment_card .details .top{
+    flex-direction: column;
+  }
+}
+.comment_card .details .top .left{
+  display: flex;
+  gap: 5px;
+}
+.comment_card .details .top .actions{
+  display: flex;
+  gap: 5px;
+  justify-content: left;
+}
+.comment_card .details .top div{
+  font-size: 15px;
+  font-family: var(--fontFamily1);
+  font-weight: 500;
+}
+.comment_card .details .top .date{
+  color: var(--txtColor3);
+}
+.comment_card .details .top .edit,
+.comment_card .details .top .reply,
+.comment_card .details .top .delete{
+  color: var(--brandingColor);
+  cursor: pointer;
+}
+.comment_card .details .text{
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: var(--fontFamily1);
+  word-break: break-all;
+  font-weight: 400;
+}
+
+.comment_card .actions{
+  display: flex;
+  justify-content: space-between;
+}
