@@ -18,11 +18,13 @@ footer .footer_content{
   display: flex;
   justify-content: space-between;
   padding: 50px 20px;
+  gap: 50px;
 }
 footer .footer_content .left,
 footer .footer_content .right{
   display: flex;
-  gap: 200px;
+  width: 50%;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 1300px){
   footer .footer_content{

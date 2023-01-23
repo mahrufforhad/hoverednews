@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
   --brandingColor1: #000000;
@@ -15,7 +16,7 @@
   --txtColor4: #a3a3a3;
   --iconColor1: #000000;
   --iconColor2: #3d3d3d;
-  --fontFamily1: 'Noto Sans Bengali', sans-serif;
+  --fontFamily1: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --fontFamily2: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --brdColor1: #dfdfdf;
   --brdColor2: #818181;
@@ -63,7 +64,7 @@ body{
 
 /* Page Body CSS */
 .page_body{
-  width: 1300px;
+  width: 1200px;
   right: 0;
   margin: 0 auto;
   height: max-content;
@@ -74,7 +75,7 @@ body{
   transform: translateX(-50%);
   border-radius: 50px 50px 0 0;
 }
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width: 1100px){
   .page_body{
     width: 100%;
   }
@@ -133,19 +134,18 @@ input[type="search"]::-webkit-search-results-decoration {
 .news_ticker{
   background: var(--bgColor1);
   border-radius: 5px;
-  height: 45px;
+  height: 40px;
   margin-top: 50px;
   display: flex;
   overflow: hidden;
 }
 .news_ticker .title{
   background: var(--brandingColor2);
-  font-size: 20px;
+  font-size: 17px;
   padding: 0 15px;
-  height: 45px;
   font-family: var(--fontFamily1);
-  font-weight: 500;
-  width: 200px;
+  font-weight: 700;
+  width: 180px;
   display: flex;
   border-right: 6px solid var(--brandingColor1);
   align-items: center;
@@ -154,26 +154,26 @@ input[type="search"]::-webkit-search-results-decoration {
   color: white;
 }
 .news_ticker marquee{
-  font-size: 22px;
+  font-size: 16=7px;
   font-family: var(--fontFamily1);
   font-weight: 550;
-  line-height: 45px;
+  line-height: 40px;
+  padding: 0 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
   background: var(--brandingColor1);
   color: white;
-  width: calc(100% - 200px);
+  width: calc(100% - 180px);
 }
 @media only screen and (max-width: 700px){
   .news_ticker{
     flex-wrap: wrap;
-    height: 85px;
+    height: 75px;
   }
   .news_ticker .title{
     height: 35px;
     width: 100%;
-    font-size: 19px;
-    font-weight: 450;
+    font-size: 16px;
     border: none;
     box-shadow: none;
   }
@@ -183,6 +183,7 @@ input[type="search"]::-webkit-search-results-decoration {
   .news_ticker marquee{
     font-size: 20px;
     font-weight: 500;
+    height: 40px;
     width: 100%;
   }
 }

@@ -66,7 +66,7 @@
   display: block;
 }
 .main_nav .branding img{
-  height: 40px !important;
+  height: 35px !important;
 }
 .main_nav .search-form{
   display: flex;
@@ -75,31 +75,31 @@
   height: 40px;
 }
 .main_nav .search-form input{
-  height: 36px;
+  height: 35px;
   width: 210px;
   border: none;
   padding: 0 10px;
-  font-size: 18px;
+  font-size: 17px;
   font-family: var(--fontFamily1);
   color: var(--txtColor1);
   font-weight: 400;
   margin: 0;
   outline: none;
-  background: var(--bgColor2);
+  background: var(--bgColor3);
   border-radius: 5px 0 0 5px;
 }
 .main_nav .search-form input:focus{
   box-shadow: 0 0 0 1px var(--bxShadow1);
 }
 .main_nav .search-form button{
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35px;
   border-radius: 10px;
   border: none;
   margin-left: -5px;
   outline: none;
   cursor: pointer;
-  background: var(--brandingColor1);
+  background: var(--brandingColor2);
 }
 .main_nav .search-form button:hover{
   box-shadow: 0 0 5px var(--brandingColor2);
@@ -108,7 +108,7 @@
   box-shadow: none;
 }
 .main_nav .search-form button svg{
-  height: 20px;
+  height: 16px;
   fill: #ffffff;
   margin-top: 3px;
 }
@@ -195,7 +195,7 @@
   margin-top: 2px;
   fill: #ffffff;
 }
-@media only screen and (max-width: 1780px){
+@media only screen and (max-width: 1700px){
   .main_nav{
     left: 0;
   }
@@ -241,7 +241,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 230px;
+  width: 210px;
   transition: .2s ease;
   background: var(--bgGlass);
   padding: 23px 0;
@@ -265,7 +265,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 15px;
+  font-size: 13px;
   font-family: var(--fontFamily1);
   font-weight: 500;
   padding: 0 25px;
@@ -279,19 +279,19 @@
   padding: 0 25px;
 }
 .side_nav .profile .image{
-  height: 90px;
-  width: 90px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
   margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .side_nav .profile .image image,
 .side_nav .profile .image svg{
   width: 100%;
 }
 .side_nav .profile .name{
-  font-size: 17px;
+  font-size: 16px;
   font-family: var(--fontFamily1);
   font-weight: 550;
   width: calc(100% - 20px);
@@ -303,24 +303,23 @@
 .side_nav .profile .actions{
   display: grid;
   grid-gap: 10px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .side_nav .profile .actions a{
-  font-size: 15px;
+  font-size: 14px;
   font-family: var(--fontFamily1);
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
-  color: #ffffff;
-  background: var(--brandingColor2);
+  width: min-content;
+  white-space: nowrap;
+  margin: 0 auto;
+  color: var(--brandingColor1);
+  background: var(--bgColor3);
+  padding: 5px 25px;
   border-radius: 4px;
-  height: 30px;
-  width: 100%;
 }
 .side_nav .profile .actions a:active{
-  box-shadow: none;
+  transform: scale(0.98);
 }
 .side_nav .profile .actions a.active{
   background: var(--brandingColor1);
@@ -330,7 +329,7 @@
 .side_nav .links{
   margin-top: 30px;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 15px;
   overflow: auto;
   height: calc(100vh - 320px);
   max-height: 400px;
@@ -342,13 +341,16 @@
   align-items: center;
   text-decoration: none;
   border-radius: 8px;
-  height: 33px;
+  height: 35px;
 }
 .side_nav .links a:hover{
-  background: var(--bgColor2);
+  background: var(--bgColor3);
+}
+.side_nav .links a:active{
+  transform: scale(0.99);
 }
 .side_nav .links a.active{
-  background: var(--bgColor2);
+  background: var(--bgColor3);
 }
 .side_nav .links a:hover .icon{
   background: var(--brandingColor2);
@@ -368,24 +370,25 @@
   width: 35px;
   border-radius: 10px;
   background: var(--bgColor2);
-  transition: .3s ease;
   fill: var(--iconColor2);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .1s;
 }
 .side_nav .links a .icon svg{
-  height: 22px;
+  height: 18px;
 }
 .side_nav .links a .text{
-  font-size: 16px;
+  font-size: 15px;
   font-family: var(--fontFamily1);
   font-weight: 600;
   color: var(--txtColor2);
   text-decoration: none;
   margin-left: 15px;
+  line-height: 35px;
 }
-@media only screen and (max-width: 1780px){
+@media only screen and (max-width: 1700px){
   .side_nav{
     left: -300px;
     transition: .2s;

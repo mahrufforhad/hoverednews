@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 480px auto;
+  grid-template-columns: 400px auto;
 }
 .home_page header .header_left{
   border-radius: 20px;
@@ -10,6 +10,7 @@
   box-shadow: 0px 0 20px var(--bgColor2);
   display: grid;
   padding: 10px;
+  height: 200px;
 }
 .home_page header .weather{
   border-radius: 20px;
@@ -33,11 +34,11 @@
   align-items: center;
 }
 .home_page header .greetings .graphics svg{
-  width: 70px;
+  width: 50px;
 }
 .home_page header .greetings .greeting-text{
   font-family: var(--fontFamily1);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--txtColor2);
 }
@@ -61,18 +62,18 @@
   align-items: center;
 }
 .home_page header .weather_cast .graphics{
-  width: 60px;
+  width: 50px;
 }
 .home_page header .weather_cast .graphics svg{
-  width: 60px;
+  width: 50px;
 }
 .home_page header .weather_cast .text{
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--fontFamily1);
   font-weight: 750;
 }
 .home_page header .weather_cast .location{
-  font-size: 18px;
+  font-size: 16px;
   font-family: var(--fontFamily1);
   font-weight: 550;
 }
@@ -84,7 +85,7 @@
   color: var(--txtColor2);
 }
 .home_page header .weather_cast .temperature span{
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /***** Header Right *****/
@@ -93,13 +94,26 @@
   background: var(--bgColor1);
   box-shadow: 0px 0 20px var(--bgColor2);
   overflow: hidden;
+  height: 200px;
 }
 .home_page header .header_right .news_card{
  box-shadow: none;
  padding: 15px; 
+ height: 200px;
+}
+.home_page header .header_right .news_card .infos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.home_page header .header_right .news_card .title{
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .home_page header .header_right .news_card p{
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 3;
+  margin-top: 0;
 }
 
 @media only screen and (max-width: 1110px){
@@ -111,27 +125,6 @@
   }
   .home_page header .weather_cast .info{
     gap: 10px;
-  }
-  .home_page header .greetings .graphics{
-    height: 75px;
-  }
-  .home_page header .greetings .graphics svg{
-    height: 75px;
-  }
-  .home_page header .greetings .greeting-text{
-    font-size: 22px;
-  }
-  .home_page header .weather_cast .graphics{
-    height: 55px;
-  }
-  .home_page header .weather_cast .graphics svg{
-    height: 55px;
-  }
-  .home_page header .weather_cast .text{
-    font-size: 19px;
-  }
-  .home_page header .weather_cast .location{
-    font-size: 17px;
   }
   .home_page header .header_right .hottest-news .thumbnail{
     height: 210px;
@@ -163,7 +156,7 @@
     height: 210px;
   }
 }
-@media only screen and (max-width: 520px){
+@media only screen and (max-width: 530px){
   .home_page header .header_left{
     height: 210px;
   }
@@ -173,6 +166,10 @@
   .home_page header .weather_cast .location{
     font-size: 16px;
     font-weight: 500;
+  }
+  .home_page header .header_right,
+  .home_page header .header_right .news_card{
+    height: unset;
   }
 }
 @media only screen and (max-width: 460px){
@@ -194,9 +191,11 @@
   }
   .home_page header .header_right .hottest-news .thumbnail{
     width: 100%;
+    aspect-ratio: 1.40967741935;
   }
   .home_page header .header_right .hottest-news .thumbnail img{
-    width: 100% !important;
+    width: 100%;
+    aspect-ratio: 1.40967741935;
   }
   .home_page header .header_right .hottest-news{
     display: flex;
@@ -207,11 +206,6 @@
   .home_page header .header_right .hottest-news .infos{
     width: 100%;
     padding-left: 0;
-  }
-  .home_page header .header_right .hottest-news .infos .read_more_btn{
-    position: unset !important;
-    text-align: center;
-    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 310px){
@@ -272,7 +266,7 @@
   margin-top: 30px;
 }
 .home_page section .section_header h2{
-  font-size: 22px;
+  font-size: 20px;
   font-family: var(--fontFamily1);
   font-weight: 700;
   color: var(--txtColor2);
@@ -289,8 +283,8 @@
 /* Grid News Sections CSS End */
 .home_page section.grid_news_section .news_container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
 }
 .home_page section.grid_news_section .news_card{
   box-shadow: 0 0 5px var(--bxShadow2);

@@ -91,9 +91,9 @@
   margin-top: 8px;
 }
 .news_card .infos .title{
-  font-size: 18px;
+  font-size: 17px;
   font-family: var(--fontFamily1);
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   color: var(--brandingColor1);
   display: -webkit-box;
@@ -110,16 +110,16 @@
   text-decoration: none;
 }
 .news_card .infos p{
-  font-size: 17px;
+  font-size: 16px;
   font-family: var(--fontFamily1);
-  font-weight: 400;
+  font-weight: 450;
   color: var(--txtColor2);
   display: -webkit-box;
-  -webkit-line-clamp: 4;
-  margin-top: 10px;
+  -webkit-line-clamp: 3;
+  margin-top: 5px;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-height: 28px;
+  line-height: 25px;
   text-overflow: ellipsis;
   word-break: break-all;
 }
