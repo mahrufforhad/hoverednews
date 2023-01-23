@@ -317,9 +317,9 @@
 .home_page section.news_categories .section_content .categories_container .card{
   padding: 10px 20px;
   border-radius: 10px;
-  height: 150px;
+  height: 120px;
   cursor: pointer;
-  background-position: -500px;
+  background-position: -820px;
 }
 .home_page section.news_categories .section_content .categories_container .card.education{
   background-image: url('../assets/images/topic\ banners/education.png');

@@ -319,7 +319,7 @@
   color: var(--txtColor2);
   background: var(--bgColor3);
   padding: 5px 25px;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 .side_nav .profile .actions a:active{
   transform: scale(0.98);

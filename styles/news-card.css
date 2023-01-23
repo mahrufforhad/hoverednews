@@ -123,6 +123,9 @@
   text-overflow: ellipsis;
   word-break: break-all;
 }
+.news_card_2 .infos p{
+  -webkit-line-clamp: 3;
+}
 
 .news_card .actions{
   margin-top: 10px;
