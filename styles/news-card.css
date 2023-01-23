@@ -48,7 +48,7 @@
 }
 .news_card .thumbnail{
   width: 280px;
-  aspect-ratio: 1.40967741935;
+  height: 180px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -110,12 +110,12 @@
   text-decoration: none;
 }
 .news_card .infos p{
-  font-size: 16px;
+  font-size: 15px;
   font-family: var(--fontFamily1);
   font-weight: 450;
   color: var(--txtColor2);
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   margin-top: 5px;
   -webkit-box-orient: vertical;
   overflow: hidden;
